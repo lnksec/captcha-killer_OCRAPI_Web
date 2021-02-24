@@ -1,7 +1,7 @@
 # captcha-killer_OCRAPI_Web
 
 ---
-    `captcha-killer`通过`python`建立的`web`服务接口调用 `baiduOCR`接口 或者`tesseract `
+         `captcha-killer`通过`python`建立的`web`服务接口调用 `baiduOCR`接口 或者`tesseract `
 
 识别验证码，本项目基于`c0ny1`的源码修改。
 
@@ -13,19 +13,19 @@
 
 #### 0x02 利用`python`的`tesseract`模块识别
 
-    直接安装调用，只可识别部分一般验证码，如4位纯数字验证码，而且精度也是很一般，需
+        直接安装调用，只可识别部分一般验证码，如4位纯数字验证码，而且精度也是很一般，需
 
 要对tesseract字库进行深度训练来提高识别的精度。
 
 **整体识别流程：**
 
-    通过`python`启动一个`web`服务器开放一个接口来接收`captcha-killer`传来的验证
+        通过`python`启动一个`web`服务器开放一个接口来接收`captcha-killer`传来的验证
 
 码图片内容，然后调用`tesseract`来识别，最后返回结果给`captcha-killer`。
 
 #### 0x03  思路
 
-    通过`python`建立`web`服务，在`python`中调用`baiduOCR`接口（或者`tesseract`模
+        通过`python`建立`web`服务，在`python`中调用`baiduOCR`接口（或者`tesseract`模
 
 块），再利用`burpsuit`中`captcha-killer`调用该`web`服务接口从而间接调用`baiduOCR`接
 
