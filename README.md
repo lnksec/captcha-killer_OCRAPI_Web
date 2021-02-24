@@ -1,9 +1,7 @@
 # captcha-killer_OCRAPI_Web
 
 ---
-         `captcha-killer`通过`python`建立的`web`服务接口调用 `baiduOCR`接口 或者`tesseract `
-
-识别验证码，本项目基于`c0ny1`的源码修改。
+         `captcha-killer`通过`python`建立的`web`服务接口调用 `baiduOCR`接口 或者`tesseract `识别验证码，本项目基于`c0ny1`的源码修改(见参考地址)。
 
 #### 0x01 直接调用`baiduOCR`接口识别
 
