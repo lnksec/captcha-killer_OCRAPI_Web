@@ -10,7 +10,7 @@
 
 #### 0x02 利用`python`的`tesseract`模块识别
 
-直接安装调用，只可识别部分一般验证码，如4位纯数字验证码，而且精度也是很一般，需要对tesseract字库进行深度训练来提高识别的精度。
+* 直接安装调用，只可识别部分一般验证码，如4位纯数字验证码，而且精度也是很一般，需要对tesseract字库进行深度训练来提高识别的精度。
 
 **整体识别流程：**
 
@@ -18,9 +18,9 @@
 
 #### 0x03  思路
 
-* 通过`python`建立`web`服务，在`python`中调用`baiduOCR`接口（或者`tesseract`模块），再利用`burpsuit`中`captcha-killer`调用该`web`服务接口从而间接调用`baiduOCR`接口进行识别，对
-      
-`captcha-killer`传入的图片数据进行二次处理（灰度处理）、图片大小调整，然后交由`baiduOCR`接口（或者`tesseract`模块）进行识别，再将响应（识别）结果返回给`captcha-killer`。
+* 通过`python`建立`web`服务，在`python`中调用`baiduOCR`接口（或者`tesseract`模块），再利用`burpsuit`中`captcha-killer`调用该`web`服务接口从而间接调用`baiduOCR`接口进行识别，`captcha-
+
+killer`传入的图片数据进行二次处理（灰度处理）、图片大小调整，然后交由`baiduOCR`接口（或者`tesseract`模块）进行识别，再将响应（识别）结果返回给`captcha-killer`。
 
 
 *PS：细化的内容就这几点，比较鸡肋，如果您有更好的修改或优化建议 ，欢迎评论交流 ~*
